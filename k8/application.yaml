@@ -1,0 +1,13 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: active-mq
+spec:
+  project: default
+  source:
+    path: examples/helloWorld
+    repoURL: 'https://github.com/ganislp/activemq.git'
+    targetRevision: HEAD
+  destination:
+    namespace: finance-db
+    server: 'https://kubernetes.default.svc'
