@@ -5,7 +5,7 @@ metadata:
 spec:
   project: default
   source:
-    path: examples/helloWorld
+    path:    activemq
     repoURL: 'https://github.com/ganislp/activemq.git'
     targetRevision: HEAD
   destination:
