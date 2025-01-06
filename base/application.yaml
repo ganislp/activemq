@@ -8,6 +8,7 @@ spec:
   source:
     repoURL: 'https://github.com/ganislp/activemq.git'
     targetRevision: HEAD
+    path : base
   destination:
     namespace: finance-db
     server: 'https://kubernetes.default.svc'
