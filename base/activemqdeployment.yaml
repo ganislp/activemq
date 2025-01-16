@@ -15,13 +15,13 @@ spec:
       containers:
       - name: active-mq
         image: slpavaniv/activemq:1.0.0
-        resources:
-         requests:
-            memory: 500Mi
-            cpu: 200m        
-         limits:
-            memory: "500Mi"
-            cpu: "200m"
+        # resources:
+        #  requests:
+        #     memory: 500Mi
+        #     cpu: 200m        
+        #  limits:
+        #     memory: "500Mi"
+        #     cpu: "200m"
         volumeMounts:
         - name: active-creds
           mountPath: /home/alpine/apache-activemq-5.15.10/conf/jetty-realm.properties
